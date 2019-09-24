@@ -1,16 +1,8 @@
-import Link from 'next/link';
+import Navbar from '../components/navbar';
 
 const Index = () => (
 <div>
-    <ul>
-        <li>
-            {/*Use a tag without href*/}
-            <Link href="/"><a>Home</a></Link>
-        </li>
-        <li>
-            <Link href="/about"><a>About</a></Link>
-        </li>
-    </ul>
+    <Navbar />
     <h1>Welcome to BitzPrice</h1>
 </div>
 );
