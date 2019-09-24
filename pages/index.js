@@ -1,1 +1,17 @@
-export default () => (<div>Hello Next.js</div>);
+import Link from 'next/link';
+
+const Index = () => (
+<div>
+    <ul>
+        <li>
+            {/*Use a tag without href*/}
+            <Link href="/"><a>Home</a></Link>
+        </li>
+        <li>
+            <Link href="/about"><a>About</a></Link>
+        </li>
+    </ul>
+    <h1>Welcome to BitzPrice</h1>
+</div>
+);
+export default Index;
